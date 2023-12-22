@@ -198,3 +198,6 @@ The table lists the RtDB binaries and libraries and their dependencies.
 
 RtDB is licensed under Apache 2.0
 
+## License
+
+RtDB2 is licensed under GNU General Public License v3 (GPL-3)
