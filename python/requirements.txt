@@ -1,2 +1,5 @@
-lmdb==0.92
-msgpack-python==0.4.8
+hexdump==3.3
+lmdb==0.86
+msgpack==0.6.2
+pause==0.3
+zstd==1.5.5.1
