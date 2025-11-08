@@ -113,7 +113,7 @@ std::set<std::string> RtDB2Monitor::collect()
     std::set<std::string> result;
     for (const auto & entry : fs::directory_iterator(_path))
     {
-        result.insert(entry.path().leaf().string());
+        result.insert(entry.path().filename().string());
     }
     return result;
 }
