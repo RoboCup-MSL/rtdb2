@@ -27,7 +27,7 @@ set(MSGPACK_LIBRARIES ${MSGPACK_LIBRARY})
 set(MSGPACK_INCLUDE_DIRS ${MSGPACK_INCLUDE_DIR})
 
 include(FindPackageHandleStandardArgs)
-find_package_handle_standard_args(Msgpack
+find_package_handle_standard_args(MsgPack
         MSGPACK_LIBRARY MSGPACK_INCLUDE_DIR)
 
 if(MSGPACK_FOUND)
