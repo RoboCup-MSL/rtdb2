@@ -7,7 +7,7 @@ struct RobotPose
     float x = 0.0;
     float y = 0.0;
     float Rz = 0.0;
-    SERIALIZE_DATA_FIXED(x, y, Rz);
+    SERIALIZE_DATA_FIXED(x, y, Rz)
     // using the _FIXED variant omits the key prefixing, for better compression
     // just try without and see how it looks in rtop/rdump
 };
@@ -17,7 +17,7 @@ struct Robot
     RobotPose pos;
     bool alive = false;
     std::string intention;
-    SERIALIZE_DATA(pos, alive, intention);
+    SERIALIZE_DATA(pos, alive, intention)
 };
 
 

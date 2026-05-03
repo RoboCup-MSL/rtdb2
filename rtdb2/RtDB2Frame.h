@@ -22,7 +22,7 @@ struct RtDB2Frame
     // public datamembers
     std::vector<RtDB2FrameItem> items;
     
-    SERIALIZE_DATA_FIXED(items);
+    SERIALIZE_DATA_FIXED(items)
     
     std::string toString()
     {

@@ -16,7 +16,7 @@ struct FrameHeader
     unsigned char agentId;
     int counter;
     rtime timestamp;
-    SERIALIZE_DATA_FIXED(agentId, counter, timestamp);
+    SERIALIZE_DATA_FIXED(agentId, counter, timestamp)
 };
 
 #endif
