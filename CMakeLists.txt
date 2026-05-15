@@ -9,7 +9,8 @@ if (RTDB_TEST_ENABLED)
   enable_testing()
 endif()
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -ftemplate-depth=1200 -Wall -Werror -Wvla")
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -Wpedantic -Wno-variadic-macros")
 # TODO this is apparently not a modern way to deal with compiler flags
 
 # system dependencies

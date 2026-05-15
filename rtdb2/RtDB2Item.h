@@ -15,7 +15,7 @@ struct RtDB2Item
     bool        shared = false;
     bool        list = false; // TODO: strip. This was quite experimental, when we (Falcons) were working briefly with sending buffers (before introducing get_and_clear)
 
-    SERIALIZE_DATA_FIXED(data, timestamp, shared, list);
+    SERIALIZE_DATA_FIXED(data, timestamp, shared, list)
     
     // interpret data
     template <typename T>
@@ -40,7 +40,7 @@ struct RtDB2FrameItem : public RtDB2Item
     std::string key;
     int         agent;
 
-    SERIALIZE_DATA_FIXED(key, agent, data, timestamp, shared, list);
+    SERIALIZE_DATA_FIXED(key, agent, data, timestamp, shared, list)
     
     // conversion constructor
     RtDB2FrameItem()
